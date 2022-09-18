@@ -1,0 +1,8 @@
+.services{
+  padding-top: 60px;
+  padding-bottom: 10px;
+
+  @include bp(lg){
+    padding-bottom: 120px;
+  }
+}

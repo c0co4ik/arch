@@ -1,0 +1,63 @@
+.search-form{
+  display: block;
+
+  @include bp(md){
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+  }
+
+  @include bp(xl){
+    flex-direction: row;
+    padding: 0;
+  }
+
+  &__field{
+    width: 100%;
+    @include reset-model;
+    @include font-helvetica-medium;
+    @include font(14px, 24px);
+    padding: 10px 62px 10px 20px;
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    background-position: center right 22px;
+    color: $color-text-base;
+    border-radius: 6px;
+    border: none;
+    flex-grow: 1;
+
+    @include bp(md){
+      width: auto;
+      @include font(16px, 24px);
+      padding: 18px 62px 18px 20px;
+      display: block;
+    }
+
+    &_location{
+      background-image: url("../img/icon-location.svg");
+    }
+
+    &_type{
+      background-image: url("../img/icon-type.svg");
+    }
+
+    &_budget{
+      background-image: url("../img/icon-budget.svg");
+    }
+
+    &::placeholder{
+      color: rgba(97, 89, 77, 0.6);
+    }
+
+    &:focus{
+      outline: 1px solid #ddd;
+    }
+  }
+  &__field{
+    margin-top: 20px;
+    @include bp(xl){
+    margin-right: 20px;
+    }
+  }
+}
+

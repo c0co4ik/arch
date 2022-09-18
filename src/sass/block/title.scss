@@ -1,0 +1,53 @@
+.title{
+  @include font-cabinet-black;
+  @include font(28px, 36px);
+  color: $color-text-dark;
+  margin-top: 0px;
+  
+  @include bp(lg){
+    @include font(32px, 40px);
+  }
+
+  &_section{
+    @include font(35px, 43px);
+
+    @include bp (lg){
+      @include font(48px, 60px);
+    }
+  }
+
+  &_white{
+    color: #fff;
+  }
+
+  &_promo{
+    @include font(40px, 42px);
+
+    @include bp(md){
+      @include font(50px, 65px);
+    }
+
+    @include bp(lg){
+      @include font(62px, 77px);
+    }
+  }
+
+
+  &_arch{
+    @include font(24px, 30px);
+  }
+
+  &_overline::before{
+    display: block;
+    content: "";
+    max-width: 300px;
+    border-top: 1px solid $color-text-base;
+    margin-bottom: 20px;
+    margin: 20px auto 20px auto;
+
+    @include bp(xl){
+      margin: 0 0 20px 0;
+    }
+  }
+}
+

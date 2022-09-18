@@ -1,0 +1,19 @@
+.projects{
+  padding-top: 45px;
+  padding-bottom: 30px;
+
+  @include bp(lg){
+    padding-top: 120px;
+    padding-bottom: 112px;
+  }
+
+  &__title{
+    margin-bottom: 50px;
+    text-align: center;
+
+    @include bp(xl){
+      text-align: left;
+    }
+    
+  }
+}

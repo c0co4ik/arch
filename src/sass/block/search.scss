@@ -1,0 +1,33 @@
+.search{
+  &__block{
+    background-color: #fff;
+    box-shadow: 30px 50px 150px rgba(39, 31, 26, 0.2);
+    padding: 30px;
+    margin-top: -105px;
+    border-radius: 10px;
+
+    @include bp(md){
+    }
+
+    @include bp(xl){
+      padding: 50px;
+    }
+  }
+
+  &__title{
+    @include reset-model;
+    @include font-cabinet-bold;
+    @include font(20px, 27px);
+    color: $color-text-dark;
+
+    @include bp(md){
+      @include font(24px, 30px);
+      text-align: center;
+    }
+
+    @include bp(xl){
+      @include font(24px, 30px);
+      text-align: inherit;
+    }
+  }
+}

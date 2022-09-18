@@ -1,0 +1,32 @@
+.nav-list{
+  @include reset-list;
+  
+  @include bp(md){
+    display: flex;
+  }
+
+  &__item{
+    margin-bottom: 20px;
+
+    @include bp(md){
+      margin-left: 30px;
+      margin-bottom: 0;
+      }
+  }
+
+  &__link{
+    @include reset-link;
+    @include font-helvetica-medium;
+    @include font(25px,32px);
+    color: $color-text-dark;
+    text-transform: uppercase;
+
+    @include bp(md){
+      @include font(14px,21px);
+    }
+    
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

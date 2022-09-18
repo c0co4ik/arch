@@ -1,0 +1,47 @@
+.lang{
+  @include reset-list;
+
+  &__item{
+    display: none;
+  }
+
+
+  &__item:first-child{
+    margin-top: 6px;
+    display: flex; 
+    align-items: center;
+
+
+    &::after {
+      display: table;
+      content: "";
+      width: 12px;
+      height: 7px;
+      background: url("../img/arrow-down.svg") no-repeat;
+      margin-left: 10px;
+    }
+  }
+
+  &__link{
+    @include reset-link;
+    @include font-helvetica-medium;
+    @include font(25px, 32px);
+    color: $color-text-dark;
+    text-transform: uppercase;
+
+    @include bp(md){
+      @include font(14px, 21px);
+    }
+  }
+
+  &:hover &__item{
+    display: flex;
+
+    &::after{
+      transform: rotate(180deg)
+    }
+  }
+}
+
+
+

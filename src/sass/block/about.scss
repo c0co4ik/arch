@@ -1,0 +1,61 @@
+.about{
+  background-color: $color-bg-about;
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  @include bp(md){
+    padding-top: 75px;
+    padding-bottom: 66px;
+  }
+
+  &__container{
+    text-align: center;
+
+    @include bp (lg){
+      display: flex;
+      align-items: center;
+      text-align: left;
+    }
+  }
+
+  &__img{
+    mix-blend-mode: darken;
+    max-width: 100%;
+    margin-bottom: 10px;
+
+    @include bp(xl){
+      margin-left: -150px;
+      max-width: 100%;
+    }
+
+    @include bp(lg){
+      margin-right: 37px;
+      max-width: 500px;
+      margin-bottom: 0;
+    }
+    
+  }
+
+  &__info{
+    margin-bottom: 10px;
+
+    @include bp(xl){
+    max-width: 419px;
+    }
+  }
+
+  &__title{
+    margin-bottom: 20px;
+  }
+
+  &__descr{
+    @include reset-model;
+    margin-bottom: 20px;
+    @include font(14px, 24px);
+    
+    @include bp(md){
+      @include font(16px, 28px);
+      margin-bottom: 20px;
+    }
+  }
+}

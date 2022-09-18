@@ -1,0 +1,22 @@
+.projects-list{
+  @include reset-list;
+  text-align: center;
+  @include bp(xl){
+        text-align: left;
+      }
+
+  &__item{
+    &:not(:last-child){
+      @include bp(xl){
+        margin-bottom: 142px;
+      }
+    }
+
+    &:nth-child(odd){
+      @include bp(xl){
+        flex-direction: row-reverse;
+        margin-right: -150px;
+      }
+    }
+  }
+}

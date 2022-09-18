@@ -1,0 +1,18 @@
+.articles-list{
+  @include reset-list;
+  
+  @include bp(xl){
+    display: flex;
+    gap: 70px;
+  }
+
+  &__item{
+    max-width: 100%;
+    margin-bottom: 40px;
+
+  @include bp(xl){
+    max-width: 535px;
+    margin: 0;
+  }
+  }
+}

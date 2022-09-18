@@ -1,0 +1,44 @@
+.services-item{
+  text-align: center;
+
+  @include bp(lg){
+    text-align: left;
+  }
+  
+  &::before{
+    display: inline-table;
+    margin-bottom: 22px;
+  }
+
+  &__title{
+    margin-bottom: 10px;
+  }
+
+  &__descr{
+    @include reset-model;
+    margin-bottom: 25px;
+  }
+
+  &__more{
+    @include reset-link;
+    @include font-cabinet-bold;
+    text-decoration: underline;
+    transition: all .3s;
+
+    &:hover{
+      color: $color-orange;
+    }
+  }
+
+  &_interior::before{
+    content: url("../img/services-interior.svg");
+  }
+
+  &_design::before{
+    content: url("../img/services-design.svg");
+  }
+
+  &_product::before{
+    content: url("../img/services-product.svg");
+  }
+}

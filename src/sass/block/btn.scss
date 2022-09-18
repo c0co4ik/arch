@@ -1,0 +1,32 @@
+.btn{
+  @include reset-button;
+  @include font-cabinet-bold;
+  @include font(16px,20px);
+  color: #fff;
+  background-color: $color-orange;
+  padding: 20px 40px;
+  border-radius: 6px;
+  transition: all .3s;
+
+  &:hover{
+    background-color: darken($color-orange, 5%);
+  }
+
+  &_contact{
+    padding: 15px 40px;
+    @include font(20px,32px);
+
+    @include bp(md){
+      @include font(16px,20px);
+    }
+  }
+
+  &_search{
+    width: 100%;
+    margin-top: 20px;
+
+    @include bp(md){
+      width: auto;
+    }
+  }
+}

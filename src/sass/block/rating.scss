@@ -1,0 +1,36 @@
+.rating{
+  &__title{
+    @include reset-model;
+    @include font-cabinet-bold;
+    @include font(18px, 20px);
+    margin-bottom: 7px;
+    color: $color-text-dark;
+    letter-spacing: 0.02em;
+
+    @include bp(md){
+      @include font(20px, 22px)
+    }
+  }
+
+  &__grade{
+    &::before{
+      display: inline-block;
+      content: url("../img/star.svg");
+      width: 16px;
+      height: 16px;
+      margin: 0 7px;
+    }
+  }
+
+  &__descr{
+    @include reset-model;
+    @include font(14px,24px);
+    margin-bottom: 10px;
+    letter-spacing: 0.02em;
+
+    @include bp(md){
+      @include font(16px,24px);
+      margin-bottom: 20px;
+    }
+  }
+}

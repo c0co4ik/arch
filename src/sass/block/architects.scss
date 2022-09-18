@@ -1,0 +1,50 @@
+.architects{
+  padding-top: 35px;
+  padding-bottom: 42px;
+  background-color: #2C2321;
+  text-align: center;
+
+  @include bp(lg){
+    padding-top: 120px;
+    padding-bottom: 112px;
+    }
+
+    @include bp(xxl){
+    text-align: left;
+    }
+
+  &__container{
+    position: relative;
+
+    @include bp(xxl){
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+
+  &__title{
+
+    @include bp(xxl){
+      flex-shrink: 0;
+      max-width: 388px;
+    }
+  }
+
+  &__swiper{
+    flex-shrink: 0;
+    margin-bottom: 30px;
+
+    @include bp(xxl){
+      margin-bottom: 30px;
+    }
+  }
+
+  &__nav{
+
+    @include bp(xxl){
+      bottom: 10px;
+      left: 15px;
+      position: absolute;
+    }
+  }
+}

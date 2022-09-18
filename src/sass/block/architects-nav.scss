@@ -1,0 +1,16 @@
+.architects-nav{
+
+  &__btn{
+    @include reset-button;
+    font-size: 0;
+    margin-right: 3px;
+  }
+
+  &__btn svg path{
+    transition: all .3s;
+  }
+
+  &__btn:hover svg path{
+    stroke: $color-orange;
+  }
+}
